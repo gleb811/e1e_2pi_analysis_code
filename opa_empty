@@ -1,0 +1,9 @@
+1 // flag 1-data; 2-simulation
+2.039 // beam energy in GeV
+1 // number of input files
+../2pi_analysis_fermi2/data_empty/out.root
+1 // number of input files with empty target
+../2pi_analysis_fermi2/data_empty/out.root
+1 // number of input files with simulation
+/cache/mss/home/skorodum/e1e/simulation/sim_conv_w_15_17_gleb/t21_3567.root
+empty.root // output file

@@ -1,0 +1,17 @@
+1 // flag 1-data; 2-simulation
+2.039 // beam energy in GeV
+1 // number of input files
+/cache/mss/home/skorodum/e1e/GLEB_DATA_E1E_CONVERTED/t21_data100.root
+1 // number of input files with empty target
+/cache/mss/home/skorodum/e1e/GLEB_DATA_E1E_CONVERTED/t21_data151.root
+9 // number of input files with simulation
+/cache/mss/home/skorodum/e1e/simulation/sim_conv_w_165_185_gleb/t21_2381.root
+/cache/mss/home/skorodum/e1e/simulation/sim_conv_w_165_185_gleb/t21_2382.root
+/cache/mss/home/skorodum/e1e/simulation/sim_conv_w_165_185_gleb/t21_2383.root
+/cache/mss/home/skorodum/e1e/simulation/sim_conv_w_165_185_gleb/t21_2384.root
+/cache/mss/home/skorodum/e1e/simulation/sim_conv_w_165_185_gleb/t21_2385.root
+/cache/mss/home/skorodum/e1e/simulation/sim_conv_w_165_185_gleb/t21_2386.root
+/cache/mss/home/skorodum/e1e/simulation/sim_conv_w_165_185_gleb/t21_2387.root
+/cache/mss/home/skorodum/e1e/simulation/sim_conv_w_165_185_gleb/t21_2388.root
+/cache/mss/home/skorodum/e1e/simulation/sim_conv_w_165_185_gleb/t21_2389.root
+out_test.root // output file

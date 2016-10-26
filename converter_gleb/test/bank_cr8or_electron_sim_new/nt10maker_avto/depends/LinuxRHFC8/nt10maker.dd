@@ -1,0 +1,9 @@
+./depends/LinuxRHFC8/nt10maker.dd /home/gleb/lib/LinuxRHFC8/nt10maker.o:  nt10maker.cc \
+  /group/clas/builds/DEVELOPMENT/packages/include/ntypes.h \
+  /group/clas/builds/DEVELOPMENT/packages/include/bostypes.h \
+  /group/clas/builds/DEVELOPMENT/packages/include/bosddl.h \
+  /group/clas/builds/DEVELOPMENT/packages/include/clas_cern.h \
+  /group/clas/builds/DEVELOPMENT/packages/include/utility.h \
+  /group/clas/builds/DEVELOPMENT/packages/include/makebanks.h \
+  /group/clas/builds/DEVELOPMENT/packages/include/trip.h \
+  /group/clas/builds/DEVELOPMENT/packages/include/vertex.h

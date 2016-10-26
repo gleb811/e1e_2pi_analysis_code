@@ -1,0 +1,1 @@
+/home/avto/lib/LinuxRHEL3/libnt10maker.a(book_trgs_nt.o) ./depends/LinuxRHEL3/book_trgs_nt.d: 

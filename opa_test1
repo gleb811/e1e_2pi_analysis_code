@@ -1,0 +1,28 @@
+1 // flag 1-data; 2-simulation
+2.039 // beam energy in GeV
+1 // number of input files
+/cache/mss/clas/e1e/production/simulation_2pi/gleb_2016/w_15_17/med_w1111.root
+1 // number of input files with empty target
+/cache/mss/clas/e1e/production/simulation_2pi/gleb_2016/w_15_17/med_w1111.root
+20 // number of input files with simulation
+/cache/mss/clas/e1e/production/simulation_2pi/gleb_2016/w_15_17/med_w1111.root
+/cache/mss/clas/e1e/production/simulation_2pi/gleb_2016/w_15_17/med_w1113.root
+/cache/mss/clas/e1e/production/simulation_2pi/gleb_2016/w_15_17/med_w1114.root
+/cache/mss/clas/e1e/production/simulation_2pi/gleb_2016/w_15_17/med_w1115.root
+/cache/mss/clas/e1e/production/simulation_2pi/gleb_2016/w_15_17/med_w1117.root
+/cache/mss/clas/e1e/production/simulation_2pi/gleb_2016/w_15_17/med_w1118.root
+/cache/mss/clas/e1e/production/simulation_2pi/gleb_2016/w_15_17/med_w1119.root
+/cache/mss/clas/e1e/production/simulation_2pi/gleb_2016/w_15_17/med_w111.root
+/cache/mss/clas/e1e/production/simulation_2pi/gleb_2016/low_w/low_w9986.root
+/cache/mss/clas/e1e/production/simulation_2pi/gleb_2016/low_w/low_w9987.root
+/cache/mss/clas/e1e/production/simulation_2pi/gleb_2016/low_w/low_w9988.root
+/cache/mss/clas/e1e/production/simulation_2pi/gleb_2016/low_w/low_w9989.root
+/cache/mss/clas/e1e/production/simulation_2pi/gleb_2016/low_w/low_w998.root
+/cache/mss/clas/e1e/production/simulation_2pi/gleb_2016/low_w/low_w9990.root
+/cache/mss/clas/e1e/production/simulation_2pi/gleb_2016/low_w/low_w9991.root
+/cache/mss/clas/e1e/production/simulation_2pi/gleb_2016/low_w/low_w9992.root
+/cache/mss/clas/e1e/production/simulation_2pi/gleb_2016/low_w/low_w9993.root
+/cache/mss/clas/e1e/production/simulation_2pi/gleb_2016/low_w/low_w9994.root
+/cache/mss/clas/e1e/production/simulation_2pi/gleb_2016/low_w/low_w9995.root
+/cache/mss/clas/e1e/production/simulation_2pi/gleb_2016/low_w/low_w9996.root
+sim_test_miss_en.root // output file

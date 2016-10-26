@@ -1,0 +1,9 @@
+1 // flag 1-data; 2-simulation
+2.039 // beam energy in GeV
+1 // number of input files
+converter_gleb/out_corr_test1.root
+1 // number of input files with empty target
+../2pi_analysis_fermi2/data_empty/out.root
+1 // number of input files with simulation
+converter_gleb/out_corr_test1.root
+test_mom_corr_test1.root // output file

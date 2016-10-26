@@ -1,0 +1,9 @@
+./depends/Linux/nt10maker.dd /home/avto/lib/Linux/nt10maker.o:  nt10maker.cc \
+  /group/clas/builds/release-4-8/packages/include/ntypes.h \
+  /group/clas/builds/release-4-8/packages/include/bostypes.h \
+  /group/clas/builds/release-4-8/packages/include/bosddl.h \
+  /group/clas/builds/release-4-8/packages/include/clas_cern.h \
+  /group/clas/builds/release-4-8/packages/include/utility.h \
+  /group/clas/builds/release-4-8/packages/include/makebanks.h \
+  /group/clas/builds/release-4-8/packages/include/trip.h \
+  /group/clas/builds/release-4-8/packages/include/vertex.h

@@ -1,0 +1,18 @@
+1 // flag 1-data; 2-simulation
+2.039 // beam energy in GeV
+10 // number of input files
+/cache/mss/home/gleb/e1e/data_converted_2016/t21_data82.root
+/cache/mss/home/gleb/e1e/data_converted_2016/t21_data83.root
+/cache/mss/home/gleb/e1e/data_converted_2016/t21_data84.root
+/cache/mss/home/gleb/e1e/data_converted_2016/t21_data85.root
+/cache/mss/home/gleb/e1e/data_converted_2016/t21_data86.root
+/cache/mss/home/gleb/e1e/data_converted_2016/t21_data87.root
+/cache/mss/home/gleb/e1e/data_converted_2016/t21_data88.root
+/cache/mss/home/gleb/e1e/data_converted_2016/t21_data89.root
+/cache/mss/home/gleb/e1e/data_converted_2016/t21_data8.root
+/cache/mss/home/gleb/e1e/data_converted_2016/t21_data90.root
+1 // number of input files with empty target
+converter_gleb/converter_gleb/out_empty.root
+1 // number of input files with simulation
+converter_gleb/converter_gleb/out_sim.root
+test.root // output file

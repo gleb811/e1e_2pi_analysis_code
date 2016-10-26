@@ -1,0 +1,12 @@
+PROJECT: e1e
+TRACK: simulation
+JOBNAME: convert_high2596
+MAIL: gleb@jlab.org
+SINGLE_JOB: TRUE
+MEMORY: 3000 MB
+DISK_SPACE: 15 GB
+OS:  centos65
+INPUT_FILES: /mss/home/skorodum/e1e/simulation/sim_w_165_185_gleb_Sep2015/nt10/nt10_2596.root /mss/home/skorodum/e1e/simulation/sim_w_165_185_gleb_Sep2015/nt10/nt10_2597.root /mss/home/skorodum/e1e/simulation/sim_w_165_185_gleb_Sep2015/nt10/nt10_2598.root /mss/home/skorodum/e1e/simulation/sim_w_165_185_gleb_Sep2015/nt10/nt10_2599.root /mss/home/skorodum/e1e/simulation/sim_w_165_185_gleb_Sep2015/nt10/nt10_2600.root /volatile/clas/clase1/gleb/test/2pi_analysis_e1e/converter_gleb/converter_gleb/h10tot21
+COMMAND: /volatile/clas/clase1/gleb/test/2pi_analysis_e1e/converter_gleb/converter_gleb/execut_high.sh 2596
+OUTPUT_DATA: out.root
+OUTPUT_TEMPLATE: /mss/clas/e1e/production/simulation_2pi/gleb_2016/high_w/high_w520.root

@@ -1,0 +1,2 @@
+./depends/Linux64RHEL5/nt10maker.dd /home/skorodum/lib/Linux64RHEL5/nt10maker.o:  nt10maker.cc ntypes.h bostypes.h bosddl.h clas_cern.h \
+ utility.h makebanks.h trip.h vertex.h

@@ -1,0 +1,80 @@
+RECKOUT    W: -----No DATA OUTPUT STREAM found----
+SDA_MINIT  L: OVERRIDING input torus current of    2250.0 with standard value    2250.0
+SDA_MINIT  L: Set Torus Current    2250.0 File Value     3860 Scale Value        0.583
+SDA_MINIT  L: Set Mini-torus Current     6000 File Value     8000 Scale Value        0.750
+SDA_DINIT  L: Read PRLINK file:/group/clas/parms/prlink_NEW_60_75.bos
+RECS_BRUN  L: Begin Run processing for run    10  consisting of GEANT   events
+RECS_BRUN  L: Run was created at: 23:37:25 on Fri the  3th of Jan  1744
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+ANA_LINK   W: *** ntr_link =120SUBSEQUENT TRACKS WILL BE TRUNCATED ***
+TRK_STATI  L: Cut#  Description               Value     Passed     %
+TRK_STATI  L: 1  trk_evnt:  Ntrig (Nevt) >        0.0         1   100.0
+TRK_STATI  L: 2  ana_segm:  Nevt w. segm =        5.0         1   100.0
+TRK_STATI  L: 3  trk_link:  Nevt w. link =        5.0         1   100.0   100.0
+TRK_STATI  L: 4  ana_prfit: Nevt PR chi2 <       30.0         1   100.0   100.0
+TRK_STATI  L: 5  SEB_eid:   Nevt SEB     =        0.0         1   100.0   100.0
+TRK_STATI  L: 6  trk_dcam:  Nevt w. LRseg=        4.0         1   100.0   100.0
+TRK_STATI  L: 7  trk_dcam:  Nevt w. LRseg=        5.0         1   100.0   100.0
+TRK_STATI  L: 8  ana_fit:   Nevt FF1 chi2 <      50.0         1   100.0   100.0
+TRK_STATI  L: 9  ana_fit:   Nevt in TBT >         0.0         1   100.0   100.0
+           L: |----------------------------------------------------------------------------|
+           L: |     RECSIS    status      exiting
+           L: |----------------------------------------------------------------------------|
+           L: |    Files currently known to FPACK                    status        # recs  |
+           L: |----------------------------------------------------------------------------|
+           L: |  Event Class  Index  Number of  Number of       Total      Average         |
+           L: |                      records    skipped recs    time(sec)  time (msec)     |
+           L: |  Job Init         22        0          0        0.080         0.000        |
+           L: |  Physics Event     7   999994          0     7987.640         7.988        |
+           L: |----------------------------------------------------------------------------|
+RECLOS     S: Ciao.... 
