@@ -27,24 +27,24 @@ ostringstream qqq1;
    bool cuts_data;
    Float_t th_min,par1,par2,fid_a,fid_b,a,b;
    Short_t i;
-   Float_t ph_el_arr[3][6][18] = {{{1000.,1000.,26.,24.,25.,28.,24.,30.,30.,34.,26.,30.,32.,27.,36.,31.,28.,1000.},
-                             {1000.,1000.,31.,20.,25.,22.,23.,21.,22.,24.,21.,31.,31.,31.,21.,29.,29.,1000.},
-                             {1000.,1000.,27.,32.,24.,23.,19.,23.,31.,28.,27.,28.,32.,34.,27.,37.,37.,1000.},
-                             {1000.,1000.,28.,20.,24.,19.,28.,26.,24.,22.,25.,29.,22.,23.,34.,43.,27.,1000.},
-                             {1000.,1000.,31.,33.,25.,28.,29.,23.,22.,28.,35.,29.,51.,29.,30.,44.,36.,1000.},
-                             {1000.,1000.,32.,28.,26.,29.,30.,30.,28.,46.,27.,39.,32.,29.,32.,33.,36.,1000.}},
+   Float_t ph_el_arr[3][6][18] = {{{1000.,1000.,23.,24.,25.,23.,25.,27.,25.,34.,26.,30.,28.,27.,34.,31.,28.,1000.},
+                             {1000.,1000.,30.,25.,25.,22.,30.,21.,22.,24.,23.,25.,31.,27.,27.,29.,29.,1000.},
+                             {1000.,1000.,23.,25.,24.,23.,23.,23.,31.,28.,27.,28.,31.,32.,32.,32.,30.,1000.},
+                             {1000.,1000.,30.,20.,24.,1.,25.,26.,24.,27.,25.,27.,22.,20.,32.,39.,30.,1000.},
+                             {1000.,1000.,31.,30.,25.,28.,27.,23.,22.,26.,31.,26.,47.,25.,35.,42.,36.,1000.},
+                             {1000.,1000.,28.,28.,22.,28.,27.,26.,26.,28.,26.,29.,28.,27.,31.,36.,34.,1000.}},
 			     {{0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.},
                              {0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.},
 		             {0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.},
 	                     {0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.},
 		             {0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.},
 			     {0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.}},
-			     {{1000.,1000.,18.,0.,24.,22.,22.,27.,26.,28.,32.,26.,23.,30.,28.,29.,25.,1000.},
-                             {1000.,1000.,31.,20.,22.,33.,27.,26.,35.,35.,23.,24.,30.,45.,40.,40.,46.,1000.},
-			     {1000.,1000.,23.,26.,28.,23.,23.,28.,24.,29.,25.,27.,29.,35.,37.,29.,36.,1000.},
-			     {1000.,1000.,0.,0.,0.,0.,25.,30.,26.,27.,0.,27.,20.,28.,32.,27.,34.,1000.},
-			     {1000.,1000.,27.,26.,27.,51.,40.,35.,31.,33.,33.,36.,40.,37.,35.,44.,31.,1000.},
-			     {1000.,1000.,31.,21.,28.,33.,31.,28.,25.,28.,38.,36.,29.,35.,50.,35.,36.,1000.}}};
+			     {{1000.,1000.,22.,20.,24.,25.,22.,24.,26.,26.,32.,26.,23.,30.,28.,25.,25.,1000.},
+                             {1000.,1000.,28.,20.,22.,30.,25.,23.,30.,33.,23.,24.,27.,35.,30.,33.,36.,1000.},
+			     {1000.,1000.,23.,26.,28.,23.,23.,25.,24.,27.,25.,27.,26.,30.,33.,29.,36.,1000.},
+			     {1000.,1000.,1.,1.,1.,1.,20.,20.,22.,26.,1.,27.,20.,23.,27.,25.,25.,1000.},
+			     {1000.,1000.,27.,26.,25.,51.,38.,32.,29.,30.,31.,36.,35.,27.,38.,41.,31.,1000.},
+			     {1000.,1000.,29.,21.,26.,33.,29.,26.,29.,32.,36.,33.,26.,32.,50.,35.,36.,1000.}}};
 			     
 			     
 			     
@@ -158,7 +158,10 @@ if  (theta_cc < 45.) {
 
 //if ((theta_cc >th_vs_seg_cc_arr[1][0][segment])&&(theta_cc <th_vs_seg_cc_arr[0][0][segment])){
 
-if (norm_nphe_s1->GetBinContent(int((theta_cc+5.)*200./60.+1.),int((ph_cc+25.)*200./60.+1.)) > 0.8) {
+h_cc_nphe_total_s1->Fill(theta_cc,ph_cc,1.);
+if (nphe > 50) h_cc_nphe_final_s1->Fill(theta_cc,ph_cc,1.);
+
+if (norm_nphe_s1->GetBinContent(int((theta_cc+5.)*200./60.+1.),int((ph_cc+25.)*200./50.+1.)) > 0.8) {
 
 
 nphe_sector1_after->Fill(nphe,1.);
@@ -219,7 +222,10 @@ if  (theta_cc < 45.) {
 
 //if ((theta_cc >th_vs_seg_cc_arr[1][0][segment])&&(theta_cc <th_vs_seg_cc_arr[0][0][segment])){
 
-if (norm_nphe_s1->GetBinContent(int((theta_cc+5.)*200./60.+1.),int((ph_cc+25.)*200./60.+1.)) > 0.8) {
+h_cc_nphe_total_s1->Fill(theta_cc,ph_cc,1.);
+if (nphe > 50) h_cc_nphe_final_s1->Fill(theta_cc,ph_cc,1.);
+
+if (norm_nphe_s1->GetBinContent(int((theta_cc+5.)*200./60.+1.),int((ph_cc+25.)*200./50.+1.)) > 0.8) {
 
 
 nphe_sector1_after->Fill(nphe,1.);
@@ -297,7 +303,11 @@ if  (theta_cc < 45.) {
 
 //if ((theta_cc >th_vs_seg_cc_arr[1][1][segment])&&(theta_cc <th_vs_seg_cc_arr[0][1][segment])){
 
-if (norm_nphe_s2->GetBinContent(int((theta_cc+5.)*200./60.+1.),int((ph_cc+25.)*200./60.+1.)) > 0.8) {
+h_cc_nphe_total_s2->Fill(theta_cc,ph_cc,1.);
+if (nphe > 50) h_cc_nphe_final_s2->Fill(theta_cc,ph_cc,1.);
+
+
+if (norm_nphe_s2->GetBinContent(int((theta_cc+5.)*200./60.+1.),int((ph_cc+25.)*200./50.+1.)) > 0.8) {
 nphe_sector2_after->Fill(nphe,1.);
 //cout << pmt_hit << "     " << segment << "\n";
 
@@ -375,7 +385,13 @@ if  (theta_cc < 45.) {
 
 //if ((theta_cc >th_vs_seg_cc_arr[1][2][segment])&&(theta_cc <th_vs_seg_cc_arr[0][2][segment])){
 
-if (norm_nphe_s3->GetBinContent(int((theta_cc+5.)*200./60.+1.),int((ph_cc+25.)*200./60.+1.)) > 0.8) {
+h_cc_nphe_total_s3->Fill(theta_cc,ph_cc,1.);
+if (nphe > 50) h_cc_nphe_final_s3->Fill(theta_cc,ph_cc,1.);
+
+
+
+
+if (norm_nphe_s3->GetBinContent(int((theta_cc+5.)*200./60.+1.),int((ph_cc+25.)*200./50.+1.)) > 0.8) {
 nphe_sector3_after->Fill(nphe,1.);
 
 if (pmt_hit == -1) ph_el_left[2][segment]->Fill(nphe,1.);
@@ -451,7 +467,12 @@ if  (theta_cc < 45.) {
 
 //if ((theta_cc >th_vs_seg_cc_arr[1][3][segment])&&(theta_cc <th_vs_seg_cc_arr[0][3][segment])){
 
-if (norm_nphe_s4->GetBinContent(int((theta_cc+5.+1.)*200./60.),int((ph_cc+25.)*200./60.+1.)) > 0.8) {
+
+h_cc_nphe_total_s4->Fill(theta_cc,ph_cc,1.);
+if (nphe > 50) h_cc_nphe_final_s4->Fill(theta_cc,ph_cc,1.);
+
+
+if (norm_nphe_s4->GetBinContent(int((theta_cc+5.+1.)*200./60.),int((ph_cc+25.)*200./50.+1.)) > 0.8) {
 nphe_sector4_after->Fill(nphe,1.);
 
 if (pmt_hit == -1) ph_el_left[3][segment]->Fill(nphe,1.);
@@ -537,7 +558,14 @@ if  (theta_cc < 45.) {
 
 //if ((theta_cc >th_vs_seg_cc_arr[1][4][segment])&&(theta_cc <th_vs_seg_cc_arr[0][4][segment])){
 
-if (norm_nphe_s5->GetBinContent(int((theta_cc+5.)*200./60.+1.),int((ph_cc+25.)*200./60.+1.)) > 0.8) {
+h_cc_nphe_total_s5->Fill(theta_cc,ph_cc,1.);
+if (nphe > 50) h_cc_nphe_final_s5->Fill(theta_cc,ph_cc,1.);
+
+
+
+
+
+if (norm_nphe_s5->GetBinContent(int((theta_cc+5.)*200./60.+1.),int((ph_cc+25.)*200./50.+1.)) > 0.8) {
 nphe_sector5_after->Fill(nphe,1.);
 
 if (pmt_hit == -1) ph_el_left[4][segment]->Fill(nphe,1.);
@@ -622,7 +650,13 @@ if  (theta_cc < 45.) {
 
 //if ((theta_cc >th_vs_seg_cc_arr[1][5][segment])&&(theta_cc <th_vs_seg_cc_arr[0][5][segment])){
 
-if (norm_nphe_s6->GetBinContent(int((theta_cc+5.)*200./60.+1.),int((ph_cc+25.)*200./60.+1.)) > 0.8) {
+
+h_cc_nphe_total_s6->Fill(theta_cc,ph_cc,1.);
+if (nphe > 50) h_cc_nphe_final_s6->Fill(theta_cc,ph_cc,1.);
+
+
+
+if (norm_nphe_s6->GetBinContent(int((theta_cc+5.)*200./60.+1.),int((ph_cc+25.)*200./50.+1.)) > 0.8) {
 nphe_sector6_after->Fill(nphe,1.);
 
 if (pmt_hit == -1) ph_el_left[5][segment]->Fill(nphe,1.);

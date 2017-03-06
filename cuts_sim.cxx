@@ -64,7 +64,7 @@ Float_t th_vs_seg_cc_arr[2][6][18] = {{{0., 14.9943, 16.1178, 17.944, 19.7594, 2
    
    
   
-     if (P_EL > 0.461) {
+//     if (P_EL > 0.461) {
 //     if ((sc_y < (0.52*sc_x-47.)) && (sc_y > (-0.52*sc_x+47.))) {
    if ((dc_z_EL > -2.3)&&(dc_z_EL < 2.)) {  
     
@@ -94,7 +94,7 @@ if (indtype==2) ph_vs_th_el_sim[0][int((P_EL*100-40)/20)]->Fill(th_EL,ph_EL,1);
 };*/
 
 
- if ((ECT/P_EL > (-0.03283*P_EL*P_EL+0.117*P_EL+0.07099)) && (ECT/P_EL < (0.01303*P_EL*P_EL-0.05557*P_EL)+0.345)) {
+// if ((ECT/P_EL > (-0.03283*P_EL*P_EL+0.117*P_EL+0.07099)) && (ECT/P_EL < (0.01303*P_EL*P_EL-0.05557*P_EL)+0.345)) {
  if (indtype==1) hist_ectot_sector1_sim->Fill(P_EL,ECT/P_EL,1.);
 
 
@@ -123,11 +123,11 @@ th_cc_vs_seg_sim[0]->Fill(segment+1,theta_cc,1.);
 //if ((theta_cc >1.64786+2.16008*segment-0.00433375*segment*segment)&&(theta_cc <11.3593+1.38551*segment+0.0451710*segment*segment)){
 
 //if (nphe > ph_el_arr[pmt_hit+1][0][segment]){
-if (norm_nphe_s1->GetBinContent(int((theta_cc+5.)*200./60.+1.),int((ph_cc+25.)*200./60.+1.)) > 0.8) {
+if (norm_nphe_s1->GetBinContent(int((theta_cc+5.)*200./60.+1.),int((ph_cc+25.)*200./50.+1.)) > 0.8) {
 //if (nphe > ph_el_arr[pmt_hit+1][0][segment]){
    cuts_sim = true;
 //};
-}; 
+//}; 
 //   };
  //  };
    };
@@ -164,7 +164,7 @@ th_cc_vs_seg_sim[0]->Fill(segment+1,theta_cc,1.);
 //if ((theta_cc >1.64786+2.16008*segment-0.00433375*segment*segment)&&(theta_cc <11.3593+1.38551*segment+0.0451710*segment*segment)){
 //if (norm_nphe_s1->GetBinContent(int((theta_cc+5.)*200./60.),int((ph_cc+30.)*200./60.)) > 0.95) {
 //if (nphe > ph_el_arr[pmt_hit+1][0][segment]){
-if (norm_nphe_s1->GetBinContent(int((theta_cc+5.)*200./60.+1.),int((ph_cc+25.)*200./60.+1.)) > 0.8) {
+if (norm_nphe_s1->GetBinContent(int((theta_cc+5.)*200./60.+1.),int((ph_cc+25.)*200./50.+1.)) > 0.8) {
 //if (nphe > ph_el_arr[pmt_hit+1][0][segment]){
    cuts_sim = true; 
 //};
@@ -185,7 +185,7 @@ if (norm_nphe_s1->GetBinContent(int((theta_cc+5.)*200./60.+1.),int((ph_cc+25.)*2
 
      
  
- }; // ectot vs p cut
+// }; // ectot vs p cut
  
  break;
  
@@ -196,7 +196,7 @@ case 2 :
 //};
 
 
- if ((ECT/P_EL > (-0.03283*P_EL*P_EL+0.117*P_EL+0.07099)) && (ECT/P_EL < (0.01303*P_EL*P_EL-0.05557*P_EL)+0.345)) {
+// if ((ECT/P_EL > (-0.03283*P_EL*P_EL+0.117*P_EL+0.07099)) && (ECT/P_EL < (0.01303*P_EL*P_EL-0.05557*P_EL)+0.345)) {
 if (indtype==1) hist_ectot_sector2_sim->Fill(P_EL,ECT/P_EL,1.);  
 // if (nphe > 25.) {
 if ((P_EL < 1.75999) && (P_EL > 0.4)){
@@ -220,11 +220,11 @@ th_cc_vs_seg_sim[1]->Fill(segment+1,theta_cc,1.);
 //if ((theta_cc >1.95003+2.00182*segment+0.00390572*segment*segment)&&(theta_cc <11.1869+1.37368*segment+0.047233*segment*segment)){
 //if (norm_nphe_s2->GetBinContent(int((theta_cc+5.)*200./60.),int((ph_cc+30.)*200./60.)) > 0.95) {
 //if (nphe > ph_el_arr[pmt_hit+1][1][segment]){
-if (norm_nphe_s2->GetBinContent(int((theta_cc+5.)*200./60.+1.),int((ph_cc+25.)*200./60.+1.)) > 0.8) {
+if (norm_nphe_s2->GetBinContent(int((theta_cc+5.)*200./60.+1.),int((ph_cc+25.)*200./50.+1.)) > 0.8) {
 //if (nphe > ph_el_arr[pmt_hit+1][1][segment]){
    cuts_sim = true; 
 //};
-};
+//};
 //   };
 //   };
    };
@@ -251,7 +251,7 @@ case 3 :
 //};
 
 
- if ((ECT/P_EL > (-0.03283*P_EL*P_EL+0.117*P_EL+0.07099)) && (ECT/P_EL < (0.01303*P_EL*P_EL-0.05557*P_EL)+0.345)) {
+// if ((ECT/P_EL > (-0.03283*P_EL*P_EL+0.117*P_EL+0.07099)) && (ECT/P_EL < (0.01303*P_EL*P_EL-0.05557*P_EL)+0.345)) {
  if (indtype==1) hist_ectot_sector3_sim->Fill(P_EL,ECT/P_EL,1.); 
 // if (nphe > 25.) {
 
@@ -278,11 +278,11 @@ th_cc_vs_seg_sim[2]->Fill(segment+1,theta_cc,1.);
 
 //if (nphe > ph_el_arr[pmt_hit+1][2][segment]){
 //if (norm_nphe_s3->GetBinContent(int((theta_cc+5.)*200./60.),int((ph_cc+30.)*200./60.)) > 0.95) {
-if (norm_nphe_s3->GetBinContent(int((theta_cc+5.)*200./60.+1.),int((ph_cc+25.)*200./60.+1.)) > 0.8) {
+if (norm_nphe_s3->GetBinContent(int((theta_cc+5.)*200./60.+1.),int((ph_cc+25.)*200./50.+1.)) > 0.8) {
 //if (nphe > ph_el_arr[pmt_hit+1][2][segment]){
    cuts_sim = true; 
 //};
-};
+//};
 //   };
 //   };
    };
@@ -307,7 +307,7 @@ case 4 :
 //};
 
 
-  if ((ECT/P_EL > (-0.03283*P_EL*P_EL+0.117*P_EL+0.07099)) && (ECT/P_EL < (0.01303*P_EL*P_EL-0.05557*P_EL)+0.345)) {
+//  if ((ECT/P_EL > (-0.03283*P_EL*P_EL+0.117*P_EL+0.07099)) && (ECT/P_EL < (0.01303*P_EL*P_EL-0.05557*P_EL)+0.345)) {
 if (indtype==1) hist_ectot_sector4_sim->Fill(P_EL,ECT/P_EL,1.);   
 
 
@@ -334,11 +334,11 @@ th_cc_vs_seg_sim[3]->Fill(segment+1,theta_cc,1.);
 //if ((theta_cc >1.36283+2.27581*segment-0.0137087*segment*segment)&&(theta_cc <11.7047+1.27222*segment+0.0517623*segment*segment)){
 //if (nphe > ph_el_arr[pmt_hit+1][3][segment]){
 //if (norm_nphe_s4->GetBinContent(int((theta_cc+5.)*200./60.),int((ph_cc+30.)*200./60.)) > 0.95) {
-if (norm_nphe_s4->GetBinContent(int((theta_cc+5.+1.)*200./60.),int((ph_cc+25.)*200./60.+1.)) > 0.8) {
+if (norm_nphe_s4->GetBinContent(int((theta_cc+5.+1.)*200./60.),int((ph_cc+25.)*200./50.+1.)) > 0.8) {
 //if (nphe > ph_el_arr[pmt_hit+1][3][segment]){
    cuts_sim = true; 
 //};
-}; 
+//}; 
 //   };
   // };
    };
@@ -363,7 +363,7 @@ case 5 :
 //if (indtype==2) ph_vs_th_el_sim[4][int((P_EL*100-40)/20)]->Fill(th_EL,ph_EL-240,1);
 //}; 
  
- if ((ECT/P_EL > (-0.03283*P_EL*P_EL+0.117*P_EL+0.07099)) && (ECT/P_EL < (0.01303*P_EL*P_EL-0.05557*P_EL)+0.345)) {
+// if ((ECT/P_EL > (-0.03283*P_EL*P_EL+0.117*P_EL+0.07099)) && (ECT/P_EL < (0.01303*P_EL*P_EL-0.05557*P_EL)+0.345)) {
 // if ((sc_x < 287.) || (sc_x > 307.)) {
 // if ((sc_y >  (-9.*sc_x+2060.)) || (sc_y < (-9.*sc_x+1920.))) {
  if (indtype==1) hist_ectot_sector5_sim->Fill(P_EL,ECT/P_EL,1.);   
@@ -394,14 +394,14 @@ th_cc_vs_seg_sim[4]->Fill(segment+1,theta_cc,1.);
 //if ((theta_cc >2.17772+1.95055*segment+0.00993131*segment*segment)&&(theta_cc <11.9184+1.34684*segment+0.0471248*segment*segment)){
 //if (norm_nphe_s5->GetBinContent(int((theta_cc+5.)*200./60.),int((ph_cc+30.)*200./60.)) > 0.95) {
 //if (nphe > ph_el_arr[pmt_hit+1][4][segment]){
-if (norm_nphe_s5->GetBinContent(int((theta_cc+5.)*200./60.+1.),int((ph_cc+25.)*200./60.+1.)) > 0.8) {
+if (norm_nphe_s5->GetBinContent(int((theta_cc+5.)*200./60.+1.),int((ph_cc+25.)*200./50.+1.)) > 0.8) {
 //if (nphe > ph_el_arr[pmt_hit+1][4][segment]){
  if ((th_EL > (9.5 + 17./(P_EL+0.72 + 0.2) +16.3)) || (th_EL < (9.5 + 17./(P_EL+0.72 + 0.2) +14.7))) {
 if ((W>1.3)&&(indtype==1)) th_vs_p_e_1_sim[4]->Fill(P_EL,th_EL,1.); 
    cuts_sim = true; 
 };
 //};
-};
+//};
  //  };
 //   };
  //  };
@@ -425,7 +425,7 @@ case 6 :
 //if (indtype==2) ph_vs_th_el_sim[5][int((P_EL*100-40)/20)]->Fill(th_EL,ph_EL-300,1);
 //}; 
  
- if ((ECT/P_EL > (-0.03283*P_EL*P_EL+0.117*P_EL+0.07099)) && (ECT/P_EL < (0.01303*P_EL*P_EL-0.05557*P_EL)+0.345)) {
+// if ((ECT/P_EL > (-0.03283*P_EL*P_EL+0.117*P_EL+0.07099)) && (ECT/P_EL < (0.01303*P_EL*P_EL-0.05557*P_EL)+0.345)) {
  if (indtype==1) hist_ectot_sector6_sim->Fill(P_EL,ECT/P_EL,1.); 
 
  
@@ -453,11 +453,11 @@ th_cc_vs_seg_sim[5]->Fill(segment+1,theta_cc,1.);
 
 //if (nphe > ph_el_arr[pmt_hit+1][5][segment]){
 //if (norm_nphe_s6->GetBinContent(int((theta_cc+5.)*200./60.),int((ph_cc+30.)*200./60.)) > 0.95) {
-if (norm_nphe_s6->GetBinContent(int((theta_cc+5.)*200./60.+1.),int((ph_cc+25.)*200./60.+1.)) > 0.8) {
+if (norm_nphe_s6->GetBinContent(int((theta_cc+5.)*200./60.+1.),int((ph_cc+25.)*200./50.+1.)) > 0.8) {
 //if (nphe > ph_el_arr[pmt_hit+1][5][segment]){
    cuts_sim = true; 
 //};
-};
+//};
 //  };
 // };
    };
