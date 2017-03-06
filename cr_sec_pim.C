@@ -83,9 +83,9 @@ read_rad_corr("avrg_rad_corr.dat");
 //Define input files
 
 TFile *file_sim = new TFile("haddmy/all_w_pim.root","READ");
-TFile *file_data = new TFile("data.root","READ");
-TFile *file_empty = new TFile("data.root","READ");
-TFile *file_model = new TFile("/volatile/clas/clase1-6/gleb/genev_clas12_14Oct_2015/empty_cells_2039.root","READ");
+TFile *file_data = new TFile("haddmy/combine_data_small_bin_all_top.root","READ");
+TFile *file_empty = new TFile("haddmy/combine_data_small_bin_all_top.root","READ");
+TFile *file_model = new TFile("empty_cells_new_bin.root","READ");
 
  for (Int_t qq2=0; qq2<12;qq2++) {
  Q2_bin = 0.425 + 0.05*qq2;

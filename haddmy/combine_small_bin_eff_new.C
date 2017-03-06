@@ -72,14 +72,14 @@ qqq.str("");
 qqq << "all_w_0.root";
 TFile *MyFile_0 = new TFile(qqq.str().c_str(),"READ");
 qqq.str("");
-qqq << "../data_new_time_corr.root";
+qqq << "../out_data.root";
 TFile *MyFile_data = new TFile(qqq.str().c_str(),"READ");
 qqq.str("");
 
-TFile *MyFile_out = new TFile("combine_small_bin_eff_time_corr2.root","RECREATE");
-TFile *MyFile_data_out = new TFile("combine_data_small_bin_eff_time_corr2.root","RECREATE");
+TFile *MyFile_out = new TFile("combine_small_bin_eff_time_corr1.root","RECREATE");
+TFile *MyFile_data_out = new TFile("combine_data_small_bin_eff_time_corr1.root","RECREATE");
 
-for (Int_t k=5; k<12;k++) {
+for (Int_t k=0; k<5;k++) {
 Q2_bin = 0.425 + k*0.05; 
 for (Int_t i=0; i<21;i++) { 
 W_bin[i] = 1.3125+0.025*i; 

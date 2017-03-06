@@ -26,7 +26,7 @@ Float_t m_proton = 0.938272;
  TLegend *leg_w_int;
 
 //Open output file
-TFile *out_file = new TFile("out_cr_sec_eff.root","RECREATE");
+TFile *out_file = new TFile("out_cr_sec_phi.root","RECREATE");
 /////// 
  
  
@@ -89,10 +89,10 @@ read_rad_corr("avrg_rad_corr.dat");
 
 //Define input files
 
-TFile *file_sim = new TFile("/cache/home/gleb/e1e/07_2016/2pi_analysis_e1e_new_bin/haddmy/combine_small_bin_all_top.root","READ");
-TFile *file_data = new TFile("/cache/home/gleb/e1e/07_2016/2pi_analysis_e1e_new_bin/haddmy/combine_data_small_bin_all_top.root","READ");
-TFile *file_empty = new TFile("/cache/home/gleb/e1e/07_2016/2pi_analysis_e1e_new_bin/haddmy/combine_data_small_bin_all_top.root","READ");
-TFile *file_model = new TFile("/volatile/clas/clase1-6/gleb/genev_clas12_model/empty_cells_new_bin.root","READ");
+TFile *file_sim = new TFile("haddmy/combine_small_bin_all_top.root","READ");
+TFile *file_data = new TFile("haddmy/combine_data_small_bin_all_top.root","READ");
+TFile *file_empty = new TFile("haddmy/combine_data_small_bin_all_top.root","READ");
+TFile *file_model = new TFile("empty_cells_new_bin.root","READ");
 
  for (Int_t qq2=0; qq2<12;qq2++) {
  Q2_bin = 0.425 + 0.05*qq2;

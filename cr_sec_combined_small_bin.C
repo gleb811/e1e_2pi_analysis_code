@@ -26,7 +26,7 @@ Float_t m_proton = 0.938272;
  TLegend *leg_w_int;
 
 //Open output file
-TFile *out_file = new TFile("out_cr_sec_eff.root","RECREATE");
+TFile *out_file = new TFile("out_cr_sec_pim.root","RECREATE");
 /////// 
  
  
@@ -89,10 +89,10 @@ read_rad_corr("avrg_rad_corr.dat");
 
 //Define input files
 
-TFile *file_sim = new TFile("/cache/home/gleb/e1e/07_2016/2pi_analysis_e1e_new_bin/haddmy/combine_small_bin_eff_time_corr.root","READ");
-TFile *file_data = new TFile("/cache/home/gleb/e1e/07_2016/2pi_analysis_e1e_new_bin/haddmy/combine_data_small_bin_eff_time_corr.root","READ");
-TFile *file_empty = new TFile("/cache/home/gleb/e1e/07_2016/2pi_analysis_e1e_new_bin/haddmy/combine_data_small_bin_eff_time_corr.root","READ");
-TFile *file_model = new TFile("/volatile/clas/clase1-6/gleb/genev_clas12_model/empty_cells_new_bin.root","READ");
+TFile *file_sim = new TFile("haddmy/all_w_pim.root","READ");
+TFile *file_data = new TFile("out_data.root","READ");
+TFile *file_empty = new TFile("out_data.root","READ");
+TFile *file_model = new TFile("empty_cells_new_bin.root","READ");
 
  for (Int_t qq2=0; qq2<12;qq2++) {
  Q2_bin = 0.425 + 0.05*qq2;
@@ -1250,27 +1250,27 @@ draw_1d_hist(7,model_1[i]->Projection(4,""),"","model_alpha_proton_","d#sigma/d#
 
 draw_1d_hist(7, h_cr_sect_noemptcells_1[i]->Projection(4,""),"","h1prj_alpha_PIpPIm_pipf_noempt","d#sigma/d#alpha (#mubn/rad)","#alpha_{p'} (deg)",2,"e1AP same","alpha",i);
 
-// alpha pi+model
+// alpha pi- model
 
 draw_1d_hist(8,model_2[i]->Projection(4,""),"","model_alpha_pim_","d#sigma/d#alpha (#mubn/rad)","alpha_{#pi^{-}} (deg)",3,"e1","alpha",i);
 
-// alpha pi+
+// alpha pi-
 
 draw_1d_hist(8,empty_fill_err( h_cr_sect_2[i]->Projection(4,""),h_cr_sect_noemptcells_2[i]->Projection(4,"")),"","h2prj_alpha_PPIp_piPIm_","d#sigma/d#alpha (#mubn/rad)","alpha_{#pi^{-}} (deg)",1,"e1AP same","alpha",i);
 
-// alpha pi+  no empty cells filling
+// alpha pi-  no empty cells filling
 
 draw_1d_hist(8,h_cr_sect_noemptcells_2[i]->Projection(4,""),"","h2prj_alpha_PPIp_piPIm_noemptcells","d#sigma/d#alpha (#mubn/rad)","alpha_{#pi^{-}} (deg)",2,"e1AP same","alpha",i);
 
-// alpha pi-
+// alpha pi+ model
 
 draw_1d_hist(9,model_3[i]->Projection(4,""),"","model_alpha_pip_","d#sigma/d#alpha (#mubn/rad)","#alpha_{#pi^{+}} (deg)",3,"e1","alpha",i);
 
-// alpha pi-
+// alpha pi+
 
 draw_1d_hist(9,empty_fill_err(h_cr_sect_3[i]->Projection(4,""),h_cr_sect_noemptcells_3[i]->Projection(4,"")),"","h3prj_alpha_PPIm_piPIp_","d#sigma/d#alpha (#mubn/rad)","#alpha_{#pi^{+}} (deg)",1,"e1AP same","alpha",i);
 
-// alpha pi-  no empty cells filling
+// alpha pi+  no empty cells filling
 
 draw_1d_hist(9,h_cr_sect_noemptcells_3[i]->Projection(4,""),"","h3prj_alpha_PPIm_piPIp_noemptcells","d#sigma/d#alpha (#mubn/rad)","#alpha_{#pi^{+}} (deg)",2,"e1AP same","alpha",i);
 

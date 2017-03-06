@@ -76,7 +76,7 @@ qqq.str("");*/
 
 for (Int_t j=0; j<=99; j++) {
 qqq.str("");
-qqq << "../high_w_" << j << ".root";
+qqq << "../w_high_" << j << ".root";
 TFile *MyFile = new TFile(qqq.str().c_str(),"READ");
 MyFile->cd();
 qqq.str("");
