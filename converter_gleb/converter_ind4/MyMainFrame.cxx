@@ -646,15 +646,33 @@ n_elast = n_elast + 1;
 // cout << i << endl;
  };
  
- ph_EL=br_mcphi->GetLeaf("mcphi")->GetValue(0);
- ph_PIm=br_mcphi->GetLeaf("mcphi")->GetValue(1);
- ph_PIp=br_mcphi->GetLeaf("mcphi")->GetValue(2);
- ph_P=br_mcphi->GetLeaf("mcphi")->GetValue(3);
+for (Int_t l=0; l<br_mcnpart->GetLeaf("mcnpart")->GetValue(); l++){
  
- P_EL=br_mcp->GetLeaf("mcp")->GetValue(0);
- P_PIm=br_mcp->GetLeaf("mcp")->GetValue(1);
- P_PIp=br_mcp->GetLeaf("mcp")->GetValue(2);
- P_P=br_mcp->GetLeaf("mcp")->GetValue(3);
+ if (br_mcid->GetLeaf("mcid")->GetValue(l) == 11){
+  th_EL=br_mctheta->GetLeaf("mctheta")->GetValue(l);
+  ph_EL=br_mcphi->GetLeaf("mcphi")->GetValue(l);
+  P_EL=br_mcp->GetLeaf("mcp")->GetValue(l);
+ };
+ 
+ if (br_mcid->GetLeaf("mcid")->GetValue(l) == -211){ 
+ th_PIm=br_mctheta->GetLeaf("mctheta")->GetValue(l); 
+ ph_PIm=br_mcphi->GetLeaf("mcphi")->GetValue(l); 
+ P_PIm=br_mcp->GetLeaf("mcp")->GetValue(l); 
+ };
+
+ if (br_mcid->GetLeaf("mcid")->GetValue(l) == 211){
+  th_PIp=br_mctheta->GetLeaf("mctheta")->GetValue(l);
+  ph_PIp=br_mcphi->GetLeaf("mcphi")->GetValue(l);
+  P_PIp=br_mcp->GetLeaf("mcp")->GetValue(l);
+ }; 
+
+ if (br_mcid->GetLeaf("mcid")->GetValue(l) == 2212){
+ th_P=br_mctheta->GetLeaf("mctheta")->GetValue(l);
+ ph_P=br_mcphi->GetLeaf("mcphi")->GetValue(l);
+ P_P=br_mcp->GetLeaf("mcp")->GetValue(l);
+};
+
+}; 
  
  x_EL = br_mcvx_x_el ->GetLeaf("mcvx_x_el")->GetValue();
  y_EL = br_mcvx_y_el ->GetLeaf("mcvx_y_el")->GetValue();
